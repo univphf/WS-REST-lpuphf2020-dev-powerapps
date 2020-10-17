@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "37d9c885-9edf-4990-a910-c9921e3058ab",
+		"name": "vm254-contacts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://vm254:8002/getContacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8002/getContacts",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8002",
+					"path": [
+						"getContacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vm254:8002/getAllContacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8002/getAllContacts",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8002",
+					"path": [
+						"getAllContacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vm254:8002/getNonActifContacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8002/getNonActifContacts",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8002",
+					"path": [
+						"getNonActifContacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vm254:8002/updateContact",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"27143333\",\"nom\":\"TONDEUR\",\"prenom\":\"HERVE\",\"tel\":\"0327143333\",\"mail\":\"herve.tondeur@uphf.fr\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://vm254:8002/updateContact",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8002",
+					"path": [
+						"updateContact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vm254:8002/delContact?id=22004627\n",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8002/delContact?id=22004627\n",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8002",
+					"path": [
+						"delContact"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "22004627\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vm254:8002/delContact2/22004627",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8002/delContact2/22004627\n",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8002",
+					"path": [
+						"delContact2",
+						"22004627\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vm254:8002/getNonActifContacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8002/getContact?id=27143333",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8002",
+					"path": [
+						"getContact"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "27143333"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://vm254:8002/putContact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"27143333\",\"nom\":\"TONDEUR\",\"prenom\":\"HERVE\",\"tel\":\"0327143333\",\"mail\":\"herve.tondeur@uphf.fr\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://vm254:8002/putContact",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8002",
+					"path": [
+						"putContact"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

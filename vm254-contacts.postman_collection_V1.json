@@ -1,0 +1,185 @@
+{
+	"id": "37d9c885-9edf-4990-a910-c9921e3058ab",
+	"name": "vm254-contacts",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"5a027519-90bc-4706-a08c-bdfc91aa8328",
+		"94b26b70-0905-4020-9e38-9065d0911a3d",
+		"46617539-b2b5-4d0d-865f-109589277623",
+		"6f531465-53ce-442c-aaa9-ff52f14a1e94",
+		"772a2889-498d-403e-9565-419b3a70ce34",
+		"27a150a2-e3fb-4e22-870c-7566a07a8977",
+		"ce36fc01-8f09-4a25-9257-47098c6d7819",
+		"3a23e39a-55e9-4904-a682-edf4ba062e16"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "27a150a2-e3fb-4e22-870c-7566a07a8977",
+			"name": "http://vm254:8002/delContact2/22004627",
+			"url": "http://vm254:8002/delContact2/22004627\n",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "3a23e39a-55e9-4904-a682-edf4ba062e16",
+			"name": "http://vm254:8002/putContact",
+			"url": "http://vm254:8002/putContact",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\"id\":\"27143333\",\"nom\":\"TONDEUR\",\"prenom\":\"HERVE\",\"tel\":\"0327143333\",\"mail\":\"herve.tondeur@uphf.fr\"}",
+			"pathVariables": {}
+		},
+		{
+			"id": "46617539-b2b5-4d0d-865f-109589277623",
+			"name": "http://vm254:8002/getNonActifContacts",
+			"url": "http://vm254:8002/getNonActifContacts",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "5a027519-90bc-4706-a08c-bdfc91aa8328",
+			"name": "http://vm254:8002/getContacts",
+			"url": "http://vm254:8002/getContacts",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "6f531465-53ce-442c-aaa9-ff52f14a1e94",
+			"name": "http://vm254:8002/updateContact",
+			"url": "http://vm254:8002/updateContact",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PATCH",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\"id\":\"27143333\",\"nom\":\"TONDEUR\",\"prenom\":\"HERVE\",\"tel\":\"0327143333\",\"mail\":\"herve.tondeur@uphf.fr\"}",
+			"pathVariables": {}
+		},
+		{
+			"id": "772a2889-498d-403e-9565-419b3a70ce34",
+			"name": "http://vm254:8002/delContact?id=22004627\n",
+			"url": "http://vm254:8002/delContact?id=22004627\n",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "22004627\n",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "94b26b70-0905-4020-9e38-9065d0911a3d",
+			"name": "http://vm254:8002/getAllContacts",
+			"url": "http://vm254:8002/getAllContacts",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "ce36fc01-8f09-4a25-9257-47098c6d7819",
+			"name": "http://vm254:8002/getNonActifContacts",
+			"url": "http://vm254:8002/getContact?id=27143333",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "id",
+					"value": "27143333",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}

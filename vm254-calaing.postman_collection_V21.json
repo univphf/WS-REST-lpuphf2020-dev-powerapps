@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "78cb708d-0da6-4a10-8eb5-d8d28b914dfc",
+		"name": "vm254-calaing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GETPATIENT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/patient?iep=688101444",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"patient"
+					],
+					"query": [
+						{
+							"key": "iep",
+							"value": "688101444"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POSTORIENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"iep\":\"688153570\", \"orientation\":\"04 CONTRE AVIS MEDEICAL\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://vm254:8802/sortir",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"sortir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETNOTIF1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/getnotif1",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"getnotif1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETNOTIF2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/getnotif2",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"getnotif2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RESETNOTIFS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/ResetNotifs",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"ResetNotifs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SIMULMEL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/SimulMEL?iep=688101444",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"SimulMEL"
+					],
+					"query": [
+						{
+							"key": "iep",
+							"value": "688101444"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RESETNOTIFPATIENT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/ResetNotifPatient?iep=688005689",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"ResetNotifPatient"
+					],
+					"query": [
+						{
+							"key": "iep",
+							"value": "688005689"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETMEDECINPARUF",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/getMedecinParUF?uf=1001",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"getMedecinParUF"
+					],
+					"query": [
+						{
+							"key": "uf",
+							"value": "1001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MEL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"iep\":\"688157082\",\"uf\":\"1001\",\"chambre\":\"6014\",\"lit\":\"14F\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8802/mel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8802",
+					"path": [
+						"mel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETPATIENTENTREE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/getPatientEntree?iep=688101444",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"getPatientEntree"
+					],
+					"query": [
+						{
+							"key": "iep",
+							"value": "688101444"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GETPATIENTSORTIE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vm254:8802/patientSortie?iep=688101444",
+					"protocol": "http",
+					"host": [
+						"vm254"
+					],
+					"port": "8802",
+					"path": [
+						"patientSortie"
+					],
+					"query": [
+						{
+							"key": "iep",
+							"value": "688101444"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
