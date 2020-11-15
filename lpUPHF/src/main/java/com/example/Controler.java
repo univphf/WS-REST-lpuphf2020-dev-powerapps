@@ -38,7 +38,7 @@ public class Controler {
     {
     List<contacts> etds=new ArrayList<>();
         
-        String sql="SELECT [id],[Nom],[Prenom],[Tel],[Email]  FROM [lpuphf2020].[dbo].[contacts] where actif=1;";
+        String sql="SELECT [id],ISNULL([Nom],'NC'),ISNULL([Prenom],'NC'),ISNULL([Tel],'NC'),ISNULL([Email],'NC') FROM [lpuphf2020].[dbo].[contacts] where actif=1;";
         
        List<Map<String, Object>> rows = jdbctemplate.queryForList(sql);
        
@@ -66,7 +66,7 @@ public class Controler {
     {
     List<contacts> etds=new ArrayList<>();
         
-        String sql="SELECT [id],[Nom],[Prenom],[Tel],[Email]  FROM [lpuphf2020].[dbo].[contacts] where actif=0;";
+        String sql="SELECT [id],ISNULL([Nom],'NC'),ISNULL([Prenom],'NC'),ISNULL([Tel],'NC'),ISNULL([Email],'NC') FROM [lpuphf2020].[dbo].[contacts] where actif=0;";
         
        List<Map<String, Object>> rows = jdbctemplate.queryForList(sql);
        
@@ -94,7 +94,7 @@ public class Controler {
     {
     List<contacts> etds=new ArrayList<>();
         
-        String sql="SELECT [id],[Nom],[Prenom],[Tel],[Email]  FROM [lpuphf2020].[dbo].[contacts]";
+        String sql="SELECT [id],ISNULL([Nom],'NC'),ISNULL([Prenom],'NC'),ISNULL([Tel],'NC'),ISNULL([Email],'NC') FROM [lpuphf2020].[dbo].[contacts]";
         
        List<Map<String, Object>> rows = jdbctemplate.queryForList(sql);
        
@@ -122,7 +122,7 @@ public class Controler {
     public ResponseEntity<contacts> getEtudiant(@RequestParam("id") int numero)
     {
         
-       String sql="SELECT [id],[Nom],[Prenom],[Tel],[Email]  FROM [lpuphf2020].[dbo].[contacts] where id=?";
+       String sql="SELECT [id],ISNULL([Nom],'NC'),ISNULL([Prenom],'NC'),ISNULL([Tel],'NC'),ISNULL([Email],'NC') FROM [lpuphf2020].[dbo].[contacts] where id=?";
       
         contacts ctx = new contacts();
         
