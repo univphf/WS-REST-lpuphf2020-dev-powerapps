@@ -38,7 +38,7 @@ public class Controler {
     {
     List<contacts> etds=new ArrayList<>();
         
-        String sql="SELECT [id],ISNULL([Nom],'NC'),ISNULL([Prenom],'NC'),ISNULL([Tel],'NC'),ISNULL([Email],'NC') FROM [lpuphf2020].[dbo].[contacts] where actif=1;";
+        String sql="SELECT [id],[Nom],[Prenom],[Tel],[Email] FROM [lpuphf2020].[dbo].[contacts] where actif=1 AND (Nom is not null or Prenom IS NOT NULL OR Tel is not null or Email IS NOT NULL)";
         
        List<Map<String, Object>> rows = jdbctemplate.queryForList(sql);
        
@@ -66,7 +66,7 @@ public class Controler {
     {
     List<contacts> etds=new ArrayList<>();
         
-        String sql="SELECT [id],ISNULL([Nom],'NC'),ISNULL([Prenom],'NC'),ISNULL([Tel],'NC'),ISNULL([Email],'NC') FROM [lpuphf2020].[dbo].[contacts] where actif=0;";
+        String sql="SELECT [id],[Nom],[Prenom],[Tel],[Email] FROM [lpuphf2020].[dbo].[contacts] where actif=0 AND (Nom is not null or Prenom IS NOT NULL OR Tel is not null or Email IS NOT NULL)";
         
        List<Map<String, Object>> rows = jdbctemplate.queryForList(sql);
        
@@ -94,7 +94,7 @@ public class Controler {
     {
     List<contacts> etds=new ArrayList<>();
         
-        String sql="SELECT [id],ISNULL([Nom],'NC'),ISNULL([Prenom],'NC'),ISNULL([Tel],'NC'),ISNULL([Email],'NC') FROM [lpuphf2020].[dbo].[contacts]";
+        String sql="SELECT [id],[Nom],[Prenom],[Tel],[Email] FROM [lpuphf2020].[dbo].[contacts] WHERE (Nom is not null or Prenom IS NOT NULL OR Tel is not null or Email IS NOT NULL)";
         
        List<Map<String, Object>> rows = jdbctemplate.queryForList(sql);
        
@@ -122,7 +122,7 @@ public class Controler {
     public ResponseEntity<contacts> getEtudiant(@RequestParam("id") int numero)
     {
         
-       String sql="SELECT [id],ISNULL([Nom],'NC'),ISNULL([Prenom],'NC'),ISNULL([Tel],'NC'),ISNULL([Email],'NC') FROM [lpuphf2020].[dbo].[contacts] where id=?";
+       String sql="SELECT [id],[Nom],[Prenom],[Tel],[Email] FROM [lpuphf2020].[dbo].[contacts] where id=? AND (Nom is not null or Prenom IS NOT NULL OR Tel is not null or Email IS NOT NULL)";
       
         contacts ctx = new contacts();
         
